@@ -1,0 +1,37 @@
+# Build artifacts
+build/
+*.r1cs
+*.sym
+*.wasm
+*.zkey
+*.ptau
+*.wtns
+
+# Node modules
+node_modules/
+
+# Circuit parameters
+params/
+
+# Test artifacts
+*.test.wtns
+*.test.json
+
+# OS files
+.DS_Store
+*.swp
+*.swo
+
+# Editor directories
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local 
