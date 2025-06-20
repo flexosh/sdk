@@ -1,0 +1,26 @@
+{
+    "flowId": "123456789",
+    "timestamp": "1683900000",
+    "identityPreImage": [
+        "98765432",
+        "45678912",
+        "32145678",
+        "78912345"
+    ],
+    "flowNonce": "987654321",
+    "merklePathElements": [
+        "123456789012345",
+        "234567890123456",
+        "345678901234567",
+        "456789012345678"
+    ],
+    "merklePathIndices": [
+        "0",
+        "1",
+        "0",
+        "1"
+    ],
+    "conditionValue": "100",
+    "conditionConstant": "50",
+    "conditionType": "1"
+} 
