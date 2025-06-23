@@ -1,0 +1,49 @@
+{
+    "circuits": {
+        "baseFlow": {
+            "file": "circuits/base/base_flow.circom",
+            "template": "BaseFlow",
+            "component": "main",
+            "params": [],
+            "compile": {
+                "protocol": "groth16",
+                "curve": "bn128"
+            }
+        },
+        "stateTransition": {
+            "file": "circuits/templates/cloud_flow_template.circom",
+            "template": "CloudFlow",
+            "component": "main",
+            "params": [20],
+            "compile": {
+                "protocol": "groth16",
+                "curve": "bn128"
+            }
+        },
+        "accountShield": {
+            "file": "circuits/auth/identity_hash.circom",
+            "template": "IdentityHash",
+            "component": "main",
+            "params": [],
+            "compile": {
+                "protocol": "groth16",
+                "curve": "bn128"
+            }
+        }
+    },
+    "optimization": {
+        "constraints": true,
+        "substitution": true,
+        "inline": true
+    },
+    "testing": {
+        "witnessGenerator": "node",
+        "circuits": ["baseFlow", "stateTransition", "accountShield"]
+    },
+    "build": {
+        "outDir": "build",
+        "wasmOutputs": true,
+        "r1csOutputs": true,
+        "symOutputs": true
+    }
+} 
